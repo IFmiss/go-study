@@ -8,6 +8,7 @@ import (
 	// utils "../mianji"
 	// condition "../ifelse"
 	loopinfo "../loop"
+	funcinfo "../funcs"
 )
 
 func main() {
@@ -24,4 +25,9 @@ func main() {
 	// condition.TestSwitch("111")
 	// condition.TestSwitchType()
 	loopinfo.Loop1()
+	println("最大值为：", funcinfo.MaxInfo(22, 111))
+
+	// 返回多个值
+	a, b, c := funcinfo.Swap("Mahesh", "Kumar", "daiwei")
+	println(a, b, c)
 }
