@@ -4,8 +4,10 @@ import (
 	f "fmt"
 	"../hello"
 	datatype "../type"
-	calc "../calc"
+	// calc "../calc"
 	// utils "../mianji"
+	// condition "../ifelse"
+	loopinfo "../loop"
 )
 
 func main() {
@@ -14,7 +16,12 @@ func main() {
 	// utils.GetMianji()
 	datatype.PrintInfo()
 
-	calc.TestCalc()
-	calc.BaseInfo()
-	calc.SetInfo()
+	// calc.TestCalc()
+	// calc.BaseInfo()
+	// calc.SetInfo()
+	// condition.TestInfo()
+	// condition.TestSwitch("daiwei")
+	// condition.TestSwitch("111")
+	// condition.TestSwitchType()
+	loopinfo.Loop1()
 }
