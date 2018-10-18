@@ -4,6 +4,7 @@ import (
 	f "fmt"
 	"../hello"
 	datatype "../type"
+	calc "../calc"
 	// utils "../mianji"
 )
 
@@ -12,4 +13,8 @@ func main() {
 	f.Println("你好")
 	// utils.GetMianji()
 	datatype.PrintInfo()
+
+	calc.TestCalc()
+	calc.BaseInfo()
+	calc.SetInfo()
 }
