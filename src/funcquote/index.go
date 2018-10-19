@@ -29,21 +29,21 @@ func TestQuote() {
 
 	println("x + y = ", calc(222, 312))
 
-	firstNum := BiBao()
-	println("匿名函数firstNum第一次执行:", firstNum())
-	println("匿名函数firstNum第二次执行:", firstNum())
-	println("匿名函数firstNum第三次执行:", firstNum())
+	firstNum := BiBao(1, 2)
+	println("匿名函数firstNum第一次执行:", firstNum(3))
+	println("匿名函数firstNum第二次执行:", firstNum(3))
+	println("匿名函数firstNum第三次执行:", firstNum(3))
 
-	secondNum := BiBao()
-	println("匿名函数secondNum第一次执行:", secondNum())
-	println("匿名函数secondNum第二次执行:", secondNum())
-	println("匿名函数secondNum第三次执行:", secondNum())
+	secondNum := BiBao(1, 2)
+	println("匿名函数secondNum第一次执行:", secondNum(5))
+	println("匿名函数secondNum第二次执行:", secondNum(5))
+	println("匿名函数secondNum第三次执行:", secondNum(5))
 }
 
-func BiBao() func() int {
+func BiBao(x, y int) func(j int) int {
 	i := 0
-	return func() int {
+	return func(j int) int {
 		i++
-		return i
+		return i + x + y + j
 	}
 }
