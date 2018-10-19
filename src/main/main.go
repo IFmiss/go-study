@@ -11,6 +11,7 @@ import (
 	funcinfo "../funcs"
 	funcval "../funcval"
 	funcquote "../funcquote"
+	arrinfo "../arr"
 )
 
 func main() {
@@ -35,4 +36,6 @@ func main() {
 
 	funcval.TestVal()
 	funcquote.TestQuote()
+
+	arrinfo.TestArr()
 }
