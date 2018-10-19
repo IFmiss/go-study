@@ -9,6 +9,8 @@ import (
 	// condition "../ifelse"
 	loopinfo "../loop"
 	funcinfo "../funcs"
+	funcval "../funcval"
+	funcquote "../funcquote"
 )
 
 func main() {
@@ -30,4 +32,7 @@ func main() {
 	// 返回多个值
 	a, b, c := funcinfo.Swap("Mahesh", "Kumar", "daiwei")
 	println(a, b, c)
+
+	funcval.TestVal()
+	funcquote.TestQuote()
 }
